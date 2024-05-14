@@ -86,7 +86,7 @@ public class Currency {
         String formattedDateTime = currentDateTime.format(formatter);
 
         if(responseTime<maxTime){
-            System.out.println("API is respond within giving timeframe: "+ responseTime+" and current date and timestamp is: "+formattedDateTime );
+            System.out.println("API is respond within giving timeframe: "+ responseTime+" seconds, and current date and timestamp is: "+formattedDateTime );
         }
     }
 
