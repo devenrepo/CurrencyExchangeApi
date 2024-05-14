@@ -55,12 +55,16 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.everit</groupId>
-            <artifactId>json-schema</artifactId>
-            <version>1.13.0</version>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>7.17.0</version>
+            <scope>test</scope>
         </dependency>
-
-
-
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>7.17.0</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 </project>

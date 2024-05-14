@@ -11,10 +11,8 @@ import io.restassured.specification.RequestSpecification;
 import org.junit.Assert;
 import org.json.JSONObject;
 import java.io.File;
-import java.io.InputStream;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import org.json.JSONTokener;
 
 public class Currency {
     public RequestSpecification httpRequest;
@@ -112,34 +110,5 @@ public class Currency {
             System.out.println("Number of currency code is not equal to: "+ numberOfCurrencyCode );
         }
     }
-
-
-    @Then("the API response should match the JSON schema")
-    public void the_api_response_should_match_the_json_schema() {
-        String currentDirectoryPath = System.getProperty("user.dir") + File.separator + "src" + File.separator + "test" + File.separator + "java" + File.separator + "utility" + File.separator + "response.Json";
-
-        // Load the JSON schema from a file or a resource
-//        InputStream schemaStream = JsonSchemaValidator.class.getResourceAsStream("/schema.json");
-//        JSONObject rawSchema = new JSONObject(new JSONTokener(schemaStream));
-//
-//        // Load the API response JSON
-//        String apiResponse = "{\"name\": \"John\", \"age\": 30}";
-//        JSONObject responseJson = new JSONObject(apiResponse);
-//
-//        // Create a JSON Schema object from the loaded schema
-//        Schema schema = SchemaLoader.load(rawSchema);
-//
-//        // Validate the API response against the schema
-//        try {
-//            schema.validate(responseJson);
-//            System.out.println("API response matches the JSON schema.");
-//        } catch (org.everit.json.schema.ValidationException e) {
-//            System.out.println("API response does not match the JSON schema:");
-//            System.out.println(e.getMessage());
-//        }
-
-
-    }
-
 
 }
